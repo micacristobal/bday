@@ -128,12 +128,11 @@ body {
 }
 
 .favorite-frame {
-  width: 120%;
+  width: 100%;
   height: 100%;
   margin-top: 18px;
   background: #cfcfcf;
-  align-items: center;
-  justify-content: center;
+
 
 }
 
@@ -195,14 +194,14 @@ body {
 
 .letter-title {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 9px;
   font-weight: 400;
 }
 
 .notebook-page p {
   margin-bottom: 8px;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .page-arrow {
@@ -314,8 +313,8 @@ body {
   }
 
   .notebook {
-    width: min(100%, 312px);
-    min-height: 400px;
+    width: min(100%, 355px);
+    min-height: 450px;
   }
 
   .notebook-page {

@@ -185,7 +185,7 @@ body {
 
 .notebook-page {
   font-family: 'Caveat', cursive;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.45;
   color: #15122d;
 }
@@ -315,7 +315,7 @@ body {
   }
 
   .notebook-page {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
 
   .gallery-card {

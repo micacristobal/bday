@@ -1,0 +1,325 @@
+/* ========== RESET & BASE ========== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Share Tech Mono', 'Intel One Mono', 'Courier New', monospace;
+  background-color: #FCFBF7;
+  min-height: 100vh;
+  color: #3a2a1a;
+}
+
+/* ========== PAGE 1 — INDEX ========== */
+.page-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCFBF7;
+}
+
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.birthday-title {
+  font-family: 'Share Tech Mono', 'Intel One Mono', 'Courier New', monospace;
+  font-size: 24px;
+  font-weight: 500;
+  color: #3a2a1a;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 10px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.cat-container {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cat-placeholder {
+  font-size: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-click {
+  display: inline-block;
+  padding: 12px 36px;
+  background-color: #e8e0d8;
+  color: #3a2a1a;
+  font-family: 'Share Tech Mono', 'Intel One Mono', 'Courier New', monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 2px solid #cdc4b8;
+  box-shadow: 2px 3px 8px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn-click:hover {
+  transform: translateY(-2px);
+  box-shadow: 3px 5px 14px rgba(0,0,0,0.13);
+}
+
+/* ========== PAGE 2 — LETTER PAGE ========== */
+.page-letter {
+  background: #e9e9e9;
+  min-height: 100vh;
+  padding: 18px 0 28px;
+}
+
+.figma-page-two {
+  width: min(100%, 360px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.favorite-sticker {
+  width: 108px;
+  margin-top: 50px;
+  margin-bottom: 8px;
+}
+
+.favorite-frame-wrap {
+  position: relative;
+  width: 240px;
+}
+
+.favorite-tape {
+  position: absolute;
+  width: 66px;
+  left: -20px;
+  top: 6px;
+  z-index: 2;
+  transform: rotate(-70deg);
+}
+
+.favorite-frame {
+  width: 100%;
+  height: 100%;
+  margin-top: 18px;
+  background: #cfcfcf;
+}
+
+.her-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-label {
+  font-family: 'Share Tech Mono', 'Intel One Mono', 'Courier New', monospace;
+  font-size: 1rem;
+  color: #1f1f1f;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.letter-section {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.letter-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 4px 18px 26px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 320ms ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.notebook {
+  width: min(100%, 322px);
+  min-height: 410px;
+  background-image: url('images/notebook-paper.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+  transform: rotate(-1.5deg);
+  padding: 15px 14px 14px 26px;
+}
+
+.notebook-page {
+  font-family: 'Caveat', cursive;
+  font-size: 0.73rem;
+  line-height: 1.45;
+  color: #151515;
+}
+
+.letter-title {
+  text-align: center;
+  font-size: 0.76rem;
+  margin-bottom: 9px;
+  font-weight: 400;
+}
+
+.notebook-page p {
+  margin-bottom: 8px;
+}
+
+.page-arrow {
+  position: absolute;
+  right: 3px;
+  top: 49%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  color: #130a1e;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+  line-height: 0.8;
+}
+
+.page-arrow.is-left {
+  left: 3px;
+  right: auto;
+}
+
+.page-arrow:hover {
+  opacity: 0.7;
+}
+
+.page-dots {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #111;
+}
+
+.gallery-section {
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 80px;
+}
+
+.gallery-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 18px 8px;
+  scrollbar-width: thin;
+}
+
+.gallery-row::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-card {
+  flex: 0 0 170px;
+  margin-bottom: 50;
+  background: #cfcfcf;
+  position: relative;
+  overflow: hidden;
+  color: #222;
+  font-family: 'Caveat', cursive;
+  scroll-snap-align: center;
+}
+
+.gallery-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-label {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.gallery-card.is-empty .gallery-label {
+  display: flex;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 520px) {
+  .figma-page-two {
+    width: min(100%, 352px);
+  }
+
+  .notebook {
+    width: min(100%, 312px);
+    min-height: 400px;
+  }
+
+  .notebook-page {
+    font-size: 0.7rem;
+  }
+
+  .gallery-card {
+    flex-basis: 166px;
+    height: 205px;
+  }
+}
